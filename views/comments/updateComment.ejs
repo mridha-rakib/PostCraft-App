@@ -31,7 +31,7 @@
       </small>
       <%}%>
       <form
-        action="/api/v1/comments/<%=comment?._id%>?_method=PUT&postId=<%=comment.post%>"
+        action="/api/comments/<%=comment?._id%>?_method=PUT&postId=<%=comment.post%>"
         method="POST"
       >
         <label for="password">message</label>
