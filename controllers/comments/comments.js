@@ -24,7 +24,7 @@ const createCommentCtrl = async (req, res) => {
 
     await post.save({ validateBeforeSave: false });
     await user.save({ validateBeforeSave: false });
-    res.redirect(`/api/v1/posts/${post._id}`);
+    res.redirect(`/api/posts/${post._id}`);
     // res.json({
     //   status: "success",
     //   user: "comment created",
